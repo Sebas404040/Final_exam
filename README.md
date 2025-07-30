@@ -1,10 +1,10 @@
 # Clinica la esperanza 
 
-Clinica especializada en el cuidado de los pacientes
+**Clinica especializada en el cuidado de los pacientes**
 
-PROBLEMA: crear un sistema agil en base de datos 
+## PROBLEMA: crear un sistema agil en base de datos 
 
-DDL:
+## DDL:
 
 -- MySQL Workbench Forward Engineering
 
@@ -185,7 +185,7 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
-DML: 
+## DML: 
 
 INSERT INTO tipo_medico(nombre) VALUES ("titular"), ("interino"), ("sustituto");
 
@@ -205,7 +205,7 @@ INSERT INTO vacaciones_medico(disfrutadas, vacacion, medico_id_medico) VALUES ("
 
 INSERT INTO Cita(paciente_id_paciente, medico_id_medico, observaciones, empleado_id_empleado) VALUES ("1", "3", "Presenta malestar", "1"), ("1", "2", "Presenta malestar", "3"), ("2", "2", "Presenta malestar", "1"), ("3", "1", "Presenta malestar", "1"), ("3", "1", "Presenta malestar", "2");
 
-DQL: 
+## DQL: 
 -- 1. Número de pacientes atendidos por cada médico
 
 SELECT M.nombre, COUNT(CT.paciente_id_paciente) AS pacientes_atendidos
